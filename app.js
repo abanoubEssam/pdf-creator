@@ -26,8 +26,6 @@ app.get('/create-pdf', async (req, res) => {
         .underline(100, 100, 160, 27, { color: "#0000FF" })
         .link(100, 100, 160, 27, 'http://google.com/');
     doc.end();
-
-    res.send('Hello World')
 })
 
 app.listen(port, () => {
